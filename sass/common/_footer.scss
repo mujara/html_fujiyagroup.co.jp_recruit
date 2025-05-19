@@ -1,0 +1,574 @@
+@use "../_setting" as s;
+
+#footer {
+	clear: both;
+	position:relative;
+	z-index:1;
+	@include s.media(m){
+		background:s.$colorType02;
+		padding:3em 0 1em 0;
+	}
+}
+
+.footer__inner {
+	width:95%;
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+	@include s.media(m){
+		width:90%;
+	}
+}
+
+#wrapper .footer__applicationBox {
+	width:100%;
+	display:block;
+	background:#FEF8EE;
+	padding:2em 1em;
+	margin-bottom:3em;
+	border-radius:0.4em;
+	@include s.media(m){
+		display:flex;
+		justify-content:space-around;
+		align-items:center;
+		padding:3em;
+		border-radius:0;
+	}
+	&__title{
+		display:block;
+		text-align:center;
+		font-family: 'Kaisei HarunoUmi', serif;
+		font-weight:700;
+		position:relative;
+		font-size:1.5em;
+		margin-bottom:0.5em;
+		@include s.media(m){
+			text-align:left;
+			font-size:2em;
+			margin-bottom:0;
+		}
+		@include s.media(xl){
+			font-size:2.5em;
+		}
+		&::after{
+			@include s.media(m){
+	                    	content: "\f105";
+	                    	font-family: 'icomoon';
+	                    	margin-right: 0.5em;
+				margin-left:1em;
+			}
+		}
+	}
+	&__inner{
+		display:flex;
+		justify-content:space-around;
+		align-items:center;
+		@include s.media(m){
+		}
+	}
+	&__button{
+		display:block;
+		text-align:center;
+		padding:0 0.5em;
+		width:50%;
+		@include s.media(m){
+			padding:0 1em;
+			width:auto;
+		}
+		dt{
+			font-family: 'Noto Sans JP', sans-serif;
+			font-weight:800;
+			font-size:1.1em;
+			@include s.media(m){
+				font-size:1.3em;
+			}
+			@include s.media(xl){
+				font-size:1.6em;
+			}
+		}
+		dd{
+			a{
+				width:100%;
+				font-family: 'Noto Sans JP', sans-serif;
+				font-weight:800;
+				text-align:center;
+				display:block;
+				background:s.$colorType02;
+				border-radius:0.3em;
+				padding:0.3em 0.5em;
+				color:#FFF;
+				font-size:1.2em;
+				line-height:1.7em;
+				@include s.media(m){
+					width:auto;
+					font-size:1.4em;
+					min-width:10em;
+					padding:0.3em 1em;
+				}
+				@include s.media(xl){
+					font-size:1.87em;
+					min-width:8em;
+				}
+				&:hover{
+					background:s.$colorType03;
+				}
+			}
+		}
+		&:nth-child(1){
+			dd a{
+				background:#21C62C;
+				&:hover{
+					background:s.$colorType03;
+				}
+			}
+		}
+	}
+}
+
+#wrapper .footer__btnApplication {
+	display:block;
+	margin-bottom:3em;
+	a{
+		font-size:1.5em;
+		letter-spacing:0.1em;
+		display:block;
+		background:#FFF;
+		text-align:center;
+		font-family: 'Kaisei HarunoUmi', serif;
+		font-weight:700;
+		padding:0.7em 1em;
+		color:#000;
+		border-radius:0.4em;
+		color:#000;
+		@include s.media(m){
+			font-size:3em;
+		}
+		&:hover{
+			background:s.$colorType03;
+			color:#000;
+		}
+	}
+}
+
+.footer__lead {
+	font-size:1.4em;
+	display:block;
+	margin-bottom:0.5em;
+	color:#FFF;
+	font-family: 'Kaisei HarunoUmi', serif;
+	font-weight:700;
+	border-top:#FFF solid 2px;
+	padding-top:0.3em;
+	display:block;
+	text-align:center;
+	letter-spacing:0.1em;
+	@include s.media(m){
+		font-size:2em;
+	}
+}
+
+#wrapper .footer__links01{
+	width:100%;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	align-items:center;
+	margin-bottom:2em;
+	@include s.media(m){
+		display:flex;
+		flex-wrap:nowrap;
+		justify-content:center;
+		align-items:center;
+	}
+	li{
+		width:50%;
+		display:block;
+		margin-bottom:1em;
+		padding:0 0.25em;
+		@include s.media(m){
+			width:33.3%;
+			margin-bottom:0;
+			padding:0;
+		}
+		&+li{
+			@include s.media(m){
+				padding-left:0.5em;
+			}
+		}
+		&:nth-child(2) a{
+			@include s.media(m){
+				padding:0.6em 0.5em;
+			}
+		}
+		&:nth-child(4){
+			display:block;
+			@include s.media(m){
+				display:none;
+			}
+		}
+		&:nth-child(5){
+			display:block;
+			@include s.media(m){
+				display:none;
+			}
+		}
+		&:nth-child(6){
+			display:block;
+			@include s.media(m){
+				display:none;
+			}
+		}
+	}
+	a{
+		display:block;
+		background:#FFF;
+		text-align:center;
+		font-family: 'Maven Pro', sans-serif;
+		font-weight:600;
+		font-size:1.1em;
+		border-radius:0.4em;
+		line-height:1.4;
+		padding:1em 0.25em;
+		@include s.media(m){
+			font-size:2em;
+			padding:1em 0.5em;
+		}
+		small{
+			font-size:0.6em;
+			font-weight:200;
+			display:none;
+			@include s.media(m){
+				display:block;
+			}
+		}
+		&:hover{
+			background:s.$colorType03;
+			color:#000;
+		}
+	}
+}
+
+
+#wrapper .footFaceBookBnner{
+	display:block;
+	position:relative;
+	width:100%;
+	margin-bottom:2em;
+	@include s.media(m){
+		width:100%;
+	}
+	&__image{
+		border:#345aa8 solid 2px;
+		@include s.media(m){
+			border:none;
+		}
+		img{
+			width:100%;
+		}
+	}
+	&__button{
+		display:inline-block;
+		position:absolute;
+		bottom:1em;
+		left:1em;
+		@include s.media(m){
+			bottom:2em;
+			left:2em;
+		}
+		a{
+			font-family: "IwaNGoPro-Th";
+			color: #FFF;
+			background: #2d5ae3;
+			display: inline-block;
+			position: relative;
+			padding: 0.3em 1em 0.3em 2.8em;
+			border-radius: 0.5em;
+			border:#FFF solid 2px;
+			@include s.media(m){
+				padding: 0.6em 1.5em 0.6em 2.8em;
+				font-size:1.6em;
+			}
+			@include s.media(xl){
+				font-size:2em;
+			}
+			&::after{
+			    content: "\f138";
+				font-family: 'icomoon';
+			    position: absolute;
+			    top: 50%;
+			    left: 1em;
+			    margin-top:-0.5em;
+			    transition: all 0.5s;
+			}
+			&:hover{
+				color:#FFF;
+				background: #1341cb;
+			}
+			&:hover::after{
+				left: 1.4em;
+			}
+		}
+	}
+}
+
+.snsBox{
+	display:block;
+	background:#fff8ee;
+	padding:3em 10% 1em;
+	width:118%;
+	margin-left:-9%;
+	@include s.media(m){
+		width:100%;
+		padding:1.5em 1.5em 1em;
+		margin-bottom:2em;
+		margin-left:0;
+	}
+}
+
+.homeInstagramBox{
+	&__title{
+		font-family: "IwaGNGoPro-Bd";
+		font-weight:bold;
+		color:#000;
+		display:block;
+		font-size:1.4em;
+		position:relative;
+		text-align:center;
+		@include s.media(m){
+			font-size:2.5em;
+			text-align:left;
+		}
+		&::before{
+			@include s.media(m){
+				content:"";
+				height:2px;
+				background:#000;
+				display:block;
+				position:absolute;
+				top:50%;
+				right:0;
+				margin-top:-1px;
+				width:50%;
+			}
+			@include s.media(xl){
+				width:50%;
+			}
+		}
+	}
+	&__inner{
+		width:115%;
+		margin-left:-9%;
+		display:flex;
+		flex-wrap:wrap;
+		@include s.media(m){
+			width:100%;
+			margin-left:0;
+			flex-wrap:nowrap;
+		}
+	}
+	&__shop{
+		displady:block;
+		//width:50%;
+		padding-left:15%;
+		@include s.media(m){
+			padding:0 0.5em;
+			//width:20%;
+		}
+		@include s.media(xl){
+			padding:0 1em;
+		}
+	}
+	&__name{
+		color:s.$colorType02;
+		font-family: "IwaGNGoPro-Bd";
+		font-weight:bold;
+		font-size:1.1em;
+		line-height:1.4;
+		background:#FFF;
+		padding-left:1em;
+		padding-top:0.5em;
+		@include s.media(m){
+			font-size:1.1em;
+			padding-left:0;
+			padding-top:0;
+			margin-bottom:0.5em;
+			background:none;
+		}
+		@include s.media(xl){
+			font-size:1.2em;
+		}
+		small{
+			font-size:0.5em;
+			display:block;
+			&+span{
+				padding-top:0;
+			}
+		}
+		span{
+			display:block;
+			padding-top:0.8em;
+		}
+	}
+	&__instagram{
+		display:block;
+		background:#FFF;
+		a{
+			display:block;
+		}
+	}
+	&__headBox{
+		width:100%;
+		display:flex;
+		justify-content:space-between;
+		align-items:center;
+		padding:0.5em;
+	}
+	&__headName{
+		figure{
+			width:1.5em;
+			display:inline-block;
+			margin-right:0.3em;
+			vertical-align: middle;
+			img{
+				width:100%;
+			}
+		}
+		span{
+			display:inline-block;
+			overflow:hidden;
+			font-weight:bold;
+			padding-top:0.3em;
+			vertical-align: middle;
+			font-size:0.8em;
+			@include s.media(m){
+				width:6em;
+			}
+			@include s.media(xl){
+				width:8em;
+			}
+		}
+	}
+	&__headImage{
+		img{
+			width:100%;
+		}
+	}
+	&__footBox{
+		display:block;
+		padding:0.5em;
+		span{
+			float:left;
+			display:inline-block;
+			width:1em;
+			margin-right:0.5em;
+			img{
+				width:100%;
+			}
+			&:last-child{
+				float:right;
+				margin-right:0;
+			}
+		}
+	}
+}
+
+#wrapper .homeInstagramBox__instagram .instagram-media{
+	width:100% !important;
+	max-width: 100% !important;
+	min-width: initial !important;
+	iframe {
+		width: 100% !important;
+		height: 100% !important;
+	}
+	.HeaderCta{
+		display:none !important;
+  	}
+	.Footer{
+		display:none !important;
+  	}
+}
+
+
+
+#wrapper .footer__links02{
+	display:none;
+	@include s.media(m){
+		width:100%;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		margin-bottom:4em;
+	}
+	li{
+		width:33.3%;
+		&+li{
+			padding-left:0.25em;
+		}
+	}
+	a{
+		display:block;
+		background:#000;
+		color:s.$colorType03;
+		text-align:center;
+		font-family: 'Maven Pro', sans-serif;
+		font-weight:600;
+		font-size:1.4em;
+		padding:1em 0.5em;
+		&:hover{
+			background:#8e2f03;
+			color:s.$colorType03;
+		}
+	}
+}
+
+#wrapper .footer__navi {
+	display:none;
+	@include s.media(m){
+		width:100%;
+		display:block;
+		padding:0 0 0 1em;
+		margin-left:-2em;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+	}
+	li{
+		padding:5px 0;
+		border-top:#999999 dotted 1px;
+		@include s.media(m){
+			padding:0 0 5px;
+			border:none;
+		}
+		a{
+			font-size:0.9em;
+			color:#FFF;
+			text-decoration:none;
+			@include s.media(m){
+				font-size:0.8em;
+			}
+			@include s.media(xl){
+				font-size:0.9em;
+			}
+			&:hover {
+				color: #000;
+				&::before {
+					@include s.media(m){
+						color: #FFF;
+					}
+				}
+			}
+		}
+		&+li a{
+			margin-left:1em;
+			&::before {
+				@include s.media(m){
+					content:"/";
+					margin-right:1em;
+				}
+			}
+		}
+	}
+}
+
+
+

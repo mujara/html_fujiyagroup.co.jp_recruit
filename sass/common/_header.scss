@@ -1,0 +1,81 @@
+@use "../_setting" as s;
+
+#header {
+	width:100%;
+	display:block;
+    transition: .3s;
+    z-index:3;
+	overflow:hidden;
+	background:s.$colorType02;
+	@include s.media(m){
+		background:none;
+		position: absolute;
+		top:0;
+		left:0;
+	}
+}
+
+.header {
+	&__headBox{
+		display:block;
+	}
+	&__siteTitleBox {
+		width:40%;
+		float:left;
+		display:block;
+		margin-left:1em;
+		@include s.media(m){
+			width:13em;
+			margin-left:2.5em;
+		}
+		@include s.media(xl){
+			margin-left:3em;
+		}
+		@include s.media(xxl){
+			width:18.75em;
+			margin-left:7em;
+		}
+		a{
+			display:block;
+			background:s.$colorType02;
+			padding:1em 0.5em;
+			@include s.media(m){
+				padding:1.5em 1em;
+			}
+			img{
+				width:100%;
+			}
+		}
+	}
+	&__siteTitle{
+		&+.header__siteTitleSentence{
+			font-size:1em;
+			margin-bottom:0;
+			margin-top:0.1em;
+			@include s.media(m){
+				font-size:1em;
+			}
+			@include s.media(xxl){
+				font-size:1.4em;
+			}
+		}
+	}
+	&__siteTitleSentence{
+		display:block;
+		color:#FFF;
+		text-align:center;
+		font-family: 'Noto Sans JP', sans-serif;
+		font-weight:600;
+		font-size:0.8em;
+		margin-bottom:0.2em;
+		letter-spacing:0.1em;
+		@include s.media(m){
+			font-size:0.9em;
+		}
+		@include s.media(xxl){
+			font-size:1.2em;
+		}
+	}
+}
+
+

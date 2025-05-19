@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="keywords" content="●サイトの検索キーワード●" />
+<meta name="description" content="●サイトの検索説明●" />
+<title>●サイトのタイトル●</title>
+<meta property="og:url" content="●ページの URL●" />
+<meta property="og:type" content="●ページの種類●website article" />
+<meta property="og:title" content="●ページの タイトル●" />
+<meta property="og:description" content="●ページの説明文●" />
+<meta property="og:site_name" content="●サイト名●" />
+<meta property="og:image" content="●サムネイル画像のURL●" />
+<meta name="apple-mobile-web-app-title" content="●iOS表示名●" />
+<meta name="author" content="●作者名●" />
+<link rel="apple-touch-icon" href="iphone.png">
+<link rel="stylesheet" href="css/import.css" media="all" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@500;700&family=M+PLUS+Rounded+1c:wght@300;500;700;800;900&family=Maven+Pro:wght@400;500;600;800;900&family=Noto+Sans+JP:wght@200;500;600;800;900&family=Potta+One&display=swap" rel="stylesheet">
+
+<script src="https://webfont.fontplus.jp/accessor/script/fontplus.js?gUwfYWZ-iOk%3D&box=aVkPVMJgt3M%3D&aa=1&ab=2"></script>
+</head>
+
+<body id="home" class="home">
+
+<div id="wrapper">
+	<header id="header" class="clearfix">
+		<div class="header__headBox --typeScrollAction">
+			
+		<!--<div id="pageTopFix">-->
+			<div class="header__siteTitleBox"><a href="<?php echo home_url(); ?>">
+				<p class="header__siteTitleSentence"><small>西宮北口の飲食グループ</small></p>
+				<h1 class="header__siteTitle"><img src="img/common/siteTitle.svg" alt="西宮で飲食店への就職・転職｜ふじやグループ正社員採用サイト" /></h1>
+				<p class="header__siteTitleSentence">新卒・キャリア採用</p>
+			</a><!-- /.header__siteTitleBox --></div>
+
+			<nav class="globalNavi">
+				<ul class="globalNavi__menu__main clearfix">
+					<li><a href="<?php echo home_url(); ?>/attraction">ふじやグループの魅力</a></li>
+					<li><a href="<?php echo home_url(); ?>/voice">先輩スタッフの声</a></li>
+					<li><a href="<?php echo home_url(); ?>/#homeMessageSection">代表挨拶</a></li>
+					<li><a href="<?php echo home_url(); ?>/recruit/data">データで見る</a></li>
+					<li><a href="<?php echo home_url(); ?>/recruit/question">よくあるご質問</a></li>
+					<li><a href="<?php echo home_url(); ?>/company">会社概要</a>
+			            		<ul class="globalNavi__menu__sub">
+							<li><a href="<?php echo home_url(); ?>/recruit/policy">プライバシーポリシー</a></li>
+						</ul> 
+		            		</li>
+				</ul>
+		    	<!-- /.globalNavi --></nav>
+
+		<!-- /#pageTopFix --</div>-->
+		
+			<nav class="globalNaviSmall">
+				<div id="globalNaviSmallIcon" class="globalNaviSmall__icon globalNaviSmall__icon--type01">
+					<div class="globalNaviSmall__iconButton">
+						<span class="iconButton--top"></span>
+						<span class="iconButton--middle"></span>
+						<span class="iconButton--bottom"></span>
+					</div>
+				</div>
+
+				<div class="modal micromodal-slide" id="modal-globalNaviSmall" aria-hidden="true">
+					<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+				    		<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-globalNaviSmall-labelledby">
+
+							<div class="globalNaviSmall__menu" id="modal-globalNaviSmall-labelledby">
+								<div class="globalNaviSmall__menu__inner">
+									<div class="globalNaviSmall__siteTitleBox"><a href="<?php echo home_url(); ?>">
+										<p class="globalNaviSmall__siteTitleSentence"><small>西宮北口の飲食グループ</small></p>
+										<h1 class="globalNaviSmall__siteTitle"><img src="img/common/siteTitle.svg" alt="西宮で飲食店への就職・転職｜ふじやグループ正社員採用サイト" /></h1>
+										<p class="globalNaviSmall__siteTitleSentence">新卒・キャリア採用</p>
+									</a><!-- /.header__siteTitleBox --></div>
+
+									<ul class="globalNaviSmall__menu__main">
+										<li><a href="<?php echo home_url(); ?>">ホーム</a></li>
+										<li><a href="<?php echo home_url(); ?>/attraction">ふじやグループの魅力</a></li>
+										<li><a href="<?php echo home_url(); ?>/voice">先輩スタッフの声</a></li>
+										<li><a href="<?php echo home_url(); ?>/#homeMessageSection">代表挨拶</a></li>
+										<li><a href="<?php echo home_url(); ?>/recruit/data">データで見る</a></li>
+										<li><a href="<?php echo home_url(); ?>/recruit/question">よくあるご質問</a></li>
+										<li><a href="<?php echo home_url(); ?>/company">会社概要</a>
+								            		<ul class="globalNavi__menu__sub">
+												<li><a href="<?php echo home_url(); ?>/recruit/policy">プライバシーポリシー</a></li>
+											</ul> 
+							            		</li>
+									</ul>
+
+									<div class="footer__applicationBox">
+										<p class="footer__applicationBox__title">面接を申し込む</p>
+										<div class="footer__applicationBox__inner">
+											<dl class="footer__applicationBox__button">
+												<dt>LINEから応募する</dt>
+												<dd><a href="#">公式LINEへ</a></dd>
+											<!-- /.footer__applicationBox__button --></dl>
+											<dl class="footer__applicationBox__button">
+												<dt>メールから応募する</dt>
+												<dd><a href="<?php echo home_url(); ?>/contact">メールフォームへ</a></dd>
+											<!-- /.footer__applicationBox__button --></dl>
+										<!-- /.footer__applicationBox__inner --></div>
+									<!-- /.footer__applicationBox --></div>
+
+								<!-- /.globalNaviSmall__menu__inner --></div>
+							<!-- /.globalNaviSmall__menu --></div>
+
+				    		<!-- /.modal__container --></div>
+					<!-- /.modal__overlay --></div>
+				<!-- /#modal-globalNaviSmall --></div>
+
+
+		    <!-- /.globalNaviSmall --></nav>
+        <!-- /.header__headBox --></div>
+	<!-- /#header --></header>
+    
+    <section class="mainVisual --typeScrollAction">
+		<div class="mainVisual__visualBox inBase">
+			<div class="mainVisual__visual">
+
+
+				<!-- スライダーここから -->
+				<div class="sliderBox--typeFullPage01">
+				<!-- Slider全体のコンテナ -->
+				<div class="swiper">
+				    <!-- Sliderの内包コンテナ -->
+				    <div class="swiper-wrapper">
+				        <!-- Slideさせたいコンテンツ -->
+				        <div class="swiper-slide">
+					        <div class="slide">
+					       		<div class="slide-media img-cover"><img src="img/home/imgMainVisual.jpg" alt="ふじやグループ　スタッフ" /></div>
+					        <!-- /.slide --></div>
+					<!-- /.swiper-slide --></div>
+				        <div class="swiper-slide">
+					        <div class="slide">
+					       		<div class="slide-media img-cover"><img src="img/home/imgMainVisual01.jpg" alt="ふじやグループ　スタッフ" /></div>
+					        <!-- /.slide --></div>
+					<!-- /.swiper-slide --></div>
+				        <div class="swiper-slide">
+					        <div class="slide">
+					       		<div class="slide-media img-cover"><img src="img/home/imgMainVisual02.jpg" alt="ふじやグループ　スタッフ" /></div>
+					        <!-- /.slide --></div>
+					<!-- /.swiper-slide --></div>
+				        <div class="swiper-slide">
+					        <div class="slide">
+					       		<div class="slide-media img-cover"><img src="img/home/imgMainVisual03.jpg" alt="ふじやグループ　スタッフ" /></div>
+					        <!-- /.slide --></div>
+					<!-- /.swiper-slide --></div>
+				        <div class="swiper-slide">
+					        <div class="slide">
+					       		<div class="slide-media img-cover"><img src="img/home/imgMainVisual04.jpg" alt="ふじやグループ　スタッフ" /></div>
+					        <!-- /.slide --></div>
+					<!-- /.swiper-slide --></div>
+				        <div class="swiper-slide">
+					        <div class="slide">
+					       		<div class="slide-media img-cover"><img src="img/home/imgMainVisual05.jpg" alt="ふじやグループ　スタッフ" /></div>
+					        <!-- /.slide --></div>
+					<!-- /.swiper-slide --></div>
+				        <div class="swiper-slide">
+					        <div class="slide">
+					       		<div class="slide-media img-cover"><img src="img/home/imgMainVisual06.jpg" alt="ふじやグループ　スタッフ" /></div>
+					        <!-- /.slide --></div>
+					<!-- /.swiper-slide --></div>
+				        <div class="swiper-slide">
+					        <div class="slide">
+					       		<div class="slide-media img-cover"><img src="img/home/imgMainVisual07.jpg" alt="ふじやグループ　スタッフ" /></div>
+					        <!-- /.slide --></div>
+					<!-- /.swiper-slide --></div>
+				    <!-- /.swiper-wrapper --></div>
+
+				<!-- /.swiper --></div>
+				<!-- Sliderここまで -->
+				<!-- /.sliderBox--typeFullPage01 --></div>
+				<!-- スライダーここまで -->
+
+			<!-- /.mainVisual__visual --></div>
+		<!-- /.mainVisual__visualBox --></div>
+		<div class="mainVisual__catchphrase">
+	    <h2 class="--typeScrollLine">あなたの居場所、<br>ここにあり.</h2>
+			<p>This Is Where You Belong.</p>
+		<!-- /.mainVisual__catchphrase --></div>
+		<div class="mainVisual__bookBox"><span>
+			<figure><img src="img/home/imgBook.jpg" alt="Alevel" /></figure>
+	    	<div class="mainVisual__bookFukidashi">
+				<p>職場の方の<br><b>94.1<small>％</small></b><br><small>が満足しています!</small></p>
+			<!-- /.mainVisual__bookFukidashi --></div>
+		</span><!-- /.mainVisual__bookBox --></div>
+		<div class="mainVisual__entryButton --typeScrollFix__subject"><a href="<?php echo home_url(); ?>/contact">
+			<b>ENTRY</b>
+		</a><!-- /.mainVisual__entryButton --></div>
+		<div class="mainVisual__bottomSent">
+			<p><span>職場満足度</span><b>94.1%</b></p>
+		<!-- /.mainVisual__entryButton --></div>
+    <!-- /.mainVisual --></section>
+	
+<div class="--typeScrollFix">
+	<div id="contents" class="clearfix">
+		<div class="homeSituationBox">
+			<div class="inBase clearfix">
+				<h3 class="homeSituationBox__lead --typeScrollBoundIn"><span>突然ですが、<br>飲食店のこんな状況、見覚えありませんか？</span></h3>
+				<ul class="homeSituationBox__situationListBox">
+					<li class="--typeScrollFadeIn">
+						<div class="homeSituationBox__situationContent">
+							<p class="homeSituationBox__number">1</p>
+							<figure class="homeSituationBox__image">
+									<img src="img/home/imgSituation01.png" alt="よく呼び出される" class="isPC" />
+									<img src="img/home/imgSituation01_sp.png" alt="よく呼び出される" class="isSP" />
+								</figure>
+							<p class="homeSituationBox__sentence">よく呼び出される</p>
+						<!-- /.homeSituationBox__situationContent --></div>
+						<div class="homeSituationBox__fukidashi">
+							<p class="isPC">悪い人間関係</p>
+							<p class="isSP">人間関係が悪い</p>
+						<!-- /.homeSituationBox__fukidashi --></div>
+					</li>
+					<li class="--typeScrollFadeIn">
+						<div class="homeSituationBox__situationContent">
+							<p class="homeSituationBox__number">2</p>
+							<figure class="homeSituationBox__image">
+									<img src="img/home/imgSituation02.png" alt="鉛筆なめなめ上司" class="isPC" />
+									<img src="img/home/imgSituation02_sp.png" alt="鉛筆なめなめ上司" class="isSP" />
+							</figure>
+							<p class="homeSituationBox__sentence">鉛筆なめなめ上司</p>
+						<!-- /.homeSituationBox__situationContent --></div>
+						<div class="homeSituationBox__fukidashi">
+							<p class="isPC">信頼できない評価</p>
+							<p class="isSP">給与制度があいまい</p>
+						<!-- /.homeSituationBox__fukidashi --></div>
+					</li>
+					<li class="--typeScrollFadeIn">
+						<div class="homeSituationBox__situationContent">
+							<p class="homeSituationBox__number">3</p>
+							<figure class="homeSituationBox__image">
+								<img src="img/home/imgSituation03.png" alt="洗い場担当、5年目" class="isPC" />
+								<img src="img/home/imgSituation03_sp.png" alt="洗い場担当、5年目" class="isSP" />
+							</figure>
+							<p class="homeSituationBox__sentence">洗い場担当、5年目</p>
+						<!-- /.homeSituationBox__situationContent --></div>
+						<div class="homeSituationBox__fukidashi">
+							<p class="isPC">昇給は、いつ…？</p>
+							<p class="isSP">評価に納得できない</p>
+						<!-- /.homeSituationBox__fukidashi --></div>
+					</li>
+					<li class="--typeScrollFadeIn">
+						<div class="homeSituationBox__situationContent">
+							<p class="homeSituationBox__number">4</p>
+							<figure class="homeSituationBox__image">
+								<img src="img/home/imgSituation04.png" alt="料理が黒焦げ" class="isPC" />
+								<img src="img/home/imgSituation04_sp.png" alt="料理が黒焦げ" class="isSP" />
+							</figure>
+							<p class="homeSituationBox__sentence">料理が黒焦げ</p>
+						<!-- /.homeSituationBox__situationContent --></div>
+						<div class="homeSituationBox__fukidashi">
+							<p>質よりスピード</p>
+						<!-- /.homeSituationBox__fukidashi --></div>
+					</li>
+				</ul>
+
+				<h4 class="homeSituationBox__message --typeScrollFadeIn"><span>もっと良い環境で働きたい…。<br>と思っている方へ</span></h4>
+			<!-- /.inBase --></div>
+		<!-- /.homeSituationBox --></div>
+
+		<div class="homeConceptBox --typeScrollFadeIn">
+			<div class="inBase clearfix">
+				<h3 class="title--type01"><span>CONCEPT</span><small>ふじやグループへようこそ!</small></h3>
+				<h4 class="homeConceptBox__lead --typeScrollBoundIn"><span>あなたの居場所、ここにあり。</span></h4>
+				<div class="homeConceptBox__conent">
+					<figure class="homeConceptBox__mainImage"><img src="img/home/imgConcept.png" alt="ふじやグルーブ社員スタッフ" /></figure>
+					<div class="homeConceptBox__inner">
+						<h5 class="homeConceptBox__lead01 --typeScrollFadeIn">ふじやグループは<br>こんな想いをお持ちのあなたを歓迎します！</h5>
+						<p class="--typeScrollFadeIn">人間関係が良い職場で働きたい。<br>
+							プライベートも充実させたい。<br>
+							自分の頑張りを評価してほしい。<br>
+							料理にもこだわりたい。</p>
+						<h5 class="homeConceptBox__lead02 --typeScrollFadeIn">不安も安心に変わる、<br>飲食業の働き方</h5>
+						<p class="--typeScrollFadeIn">仲間と共に成長を実感できる。<br>
+							ワクワクしながら働ける。<br>
+							スタッフのおもてなしにお客様がファンになる。<br><br>
+
+							「今日もご馳走さま！」<br>
+							「また来たで！」<br><br>
+
+							やりがいを感じるから<br>
+							人はもっと期待に応えたくなる。<br><br>
+
+							ふじやグループは、<br>
+							飲食業ではたらく醍醐味を感じられる会社です。</p>
+					<!-- /.homeConceptBox__inner --></div>
+					<ul class="homeConceptBox__imageBox">
+						<li><figure><img src="img/home/imgConcept01.jpg" alt="" /></figure></li>
+						<li><figure><img src="img/home/imgConcept02.jpg" alt="" /></figure></li>
+						<li><figure><img src="img/home/imgConcept03.jpg" alt="" /></figure></li>
+					</ul>
+				<!-- /.homeConceptBox__conent --></div>
+			<!-- /.inBase --></div>
+		<!-- /.homeConceptBox --></div>
+
+		<div class="homeShopListBox --typeScrollFadeIn">
+			<h3 class="homeShopListBox__title">西宮北口エリアで 5店舗経営!!</h3>
+
+
+
+
+<!-- スライダーここから -->
+<div class="sliderBox--typeFlow">
+
+    <!-- Slider全体のコンテナ -->
+    <div class="swiper">
+      <!-- Sliderの内包コンテナ -->
+      <div class="swiper-wrapper">
+        <!-- Slideさせたいコンテンツ -->
+	<a href="#" class="swiper-slide">
+		<div class="slide">
+			<figure><img src="img/home/imgShop01.jpg" alt="居酒屋ふじや本店" /><figcaption>居酒屋ふじや本店</figcaption></figure>
+		<!-- /.slide --></div>
+	<!-- /.swiper-slide --></a>
+	<a href="#" class="swiper-slide">
+		<div class="slide">
+			<figure><img src="img/home/imgShop02.jpg" alt="炭火と酒　千本鶏" /><figcaption>炭火と酒　千本鶏</figcaption></figure>
+		<!-- /.slide --></div>
+	<!-- /.swiper-slide --></a>
+	<a href="#" class="swiper-slide">
+		<div class="slide">
+			<figure><img src="img/home/imgShop03.jpg" alt="アイリッシュカフェ＆レストラン カプリシカ" /><figcaption>アイリッシュカフェ＆レストラン カプリシカ</figcaption></figure>
+		<!-- /.slide --></div>
+	<!-- /.swiper-slide --></a>
+	<a href="#" class="swiper-slide">
+		<div class="slide">
+			<figure><img src="img/home/imgShop04.jpg" alt="やきとり専門店　鳥半本店" /><figcaption>やきとり専門店　鳥半本店</figcaption></figure>
+		<!-- /.slide --></div>
+	<!-- /.swiper-slide --></a>
+	<a href="#" class="swiper-slide">
+		<div class="slide">
+			<figure><img src="img/home/imgShop05.jpg" alt="やきとり専門店　鳥半阪神店" /><figcaption>やきとり専門店　鳥半阪神店</figcaption></figure>
+		<!-- /.slide --></div>
+	<!-- /.swiper-slide --></a>
+
+      </div><!-- /swiper-wrapper -->
+    </div><!-- /swiper -->
+<!-- /.sliderBox--typeFlow --></div>
+<!-- スライダーここまで -->
+
+
+
+
+
+
+		<!-- /.homeShopListBox --></div>
+
+
+		<div class="homeAttractionBox">
+			<div class="inBase clearfix">
+				<h3 class="title--type01 --typeScrollFadeIn"><span>ABOUT</span><small>ふじやグループの魅力</small></h3>
+				<p class="homeAttractionBox__sentence --typeScrollFadeIn">様々な働く環境があると思います。私たちは心をひとつにして目標に向かうため、<br>
+大きなやりがい感じながら働くため、環境は大事です。いったいどちらがふじやグループでしょうか。当ててみてください！</p>
+				
+				<h4 class="homeAttractionBox__questionTitle --typeScrollFadeIn"><i class="fa fa-fw icon-question"></i><b>職場環境クイズ</b><span>「どちらがふじやグループ!?」</span></h4>
+
+
+				<div class="title--type02 --typeScrollAction"><h4><div class="--typeScrollBoundIn"><span><small>Question.1</small><p>職場の雰囲気は、どっち？</p></span></div></h4></div>
+				<ul class="homeAttractionBox__questionItemBox --typeScrollAction">
+					<li>
+						<p>個人のスキルアップを全力で！</p>
+						<figure><img src="img/home/imgQuestion0101.png" alt="個人のスキルアップを全力で！" /></figure>
+					</li>
+					<li>
+						<p>目標に向かって全員で！</p>
+						<figure><img src="img/home/imgQuestion0102.png" alt="目標に向かって全員で！" /></figure>
+					</li>
+				</ul>
+				
+
+	                    <div class="accordionBox--typeHomeQuestion --typeScrollFadeIn">
+	                        <!--項目ここから-->
+	                        <div class="accordion--typeHomeQuestion">
+	                            <input type="checkbox" class="accordion--typeHomeQuestion__check" id="accordion--typeHomeQuestion__label001" />
+	                            <label for="accordion--typeHomeQuestion__label001">ANSWER</label>
+	                            <div class="accordion--typeHomeQuestion__content">
+	                                <!--隠す中身ここから-->
+						<div class="accordion--typeHomeQuestion__answerBox">
+							<p class="accordion--typeHomeQuestion__title">右が正解！</p>
+
+							<div class="accordion--typeHomeQuestion__headBox">
+								<p>個人のスキルや実力はもちろん大切です。でも仲間と一緒に成長できる楽しさ、充実感、やりがいはきっと一人で感じるものとは違うはず。ふじやグループではスタッフ全員が力を合わせて目標を達成し、喜びを分かち合うことを大切にしています。４つの委員会を筆頭に会社全体でコミュニケーションの場を充実させ、より良い会社・店舗づくりを行うための取り組みを行なっています！</p>
+								<figure><img src="img/home/imgAnswer01.png" alt="個人のスキルアップを全力で！" /></figure>
+							<!--//.accordion--typeHomeQuestion__headBox--></div>
+							
+							<h3 class="accordion--typeHomeQuestion__title02">
+								<small>ふじやグループの魅力.1</small>
+								<b>「もっと良い会社に」「もっと良いお店に」するための委員会制度</b>
+							</h3>
+							<div class="row">
+								<div class="col-12 col-md-6 sM">
+									<div class="box--type01 --type01">
+										<h4 class="box--type01__title">交流委員会</h4>
+										<div class="box--type01__content">
+											<figure><img src="img/home/imgAttraction0101.jpg" alt="" /></figure>
+											<h5 class="box--type01__lead">2ヶ月に１度のイベント企画・運営</h5>
+											<p>仕事も遊びも本気で!!<br>ふじやグループ全体の交流を促します</p>
+										<!-- /.box--type01__content --></div>
+									<!-- /.box--type01 --></div>
+								</div>
+								<div class="col-12 col-md-6 sM">
+									<div class="box--type01 --type02">
+										<h4 class="box--type01__title">新商品開発委員会</h4>
+										<div class="box--type01__content">
+											<figure><img src="img/home/imgAttraction0102.jpg" alt="" /></figure>
+											<h5 class="box--type01__lead">新商品開発委員会</h5>
+											<p>自分たちでアイデアを出します。<br>あなたの考えた料理が、お店の人気メニューになるかも!?</p>
+										<!-- /.box--type01__content --></div>
+									<!-- /.box--type01 --></div>
+								</div>
+								<div class="col-12 col-md-6 sM">
+									<div class="box--type01 --type03">
+										<h4 class="box--type01__title">5S委員会</h4>
+										<div class="box--type01__content">
+											<figure><img src="img/home/imgAttraction0103.jpg" alt="" /></figure>
+											<h5 class="box--type01__lead">整理・整頓・清潔・清掃・躾けを伸ばしていく</h5>
+											<p>毎月１回各店舗の衛生チェックを行い、<br>店舗の5S環境を向上し働きやすい環境を皆で実現します。</p>
+										<!-- /.box--type01__content --></div>
+									<!-- /.box--type01 --></div>
+								</div>
+								<div class="col-12 col-md-6 sM">
+									<div class="box--type01 --type04">
+										<h4 class="box--type01__title">店舗指針書・新卒採用委員会</h4>
+										<div class="box--type01__content">
+											<figure><img src="img/home/imgAttraction0104.jpg" alt="" /></figure>
+											<h5 class="box--type01__lead">志の高い店舗づくりを行うための店長主体の委員会</h5>
+											<p>新卒・アルバイトさんが安心して仕事に取り組めるように、<br>
+												１つのブックをアルバイトスタッフと共に制作する委員会</p>
+										<!-- /.box--type01__content --></div>
+									<!-- /.box--type01 --></div>
+								</div>
+							<!-- /.row --></div>
+
+						<!--//.accordion--typeHomeQuestion__answerBox--></div>
+
+	                                <!--隠す中身ここまで-->
+	                            <!--//.accordion--typeHomeQuestion__content--></div>
+	                        <!--//.accordion--typeHomeQuestion--></div>
+	                        <!--//項目ここまで-->
+
+	                    <!--//.accordionBox--></div>
+
+
+
+
+				<div class="title--type02 --typeScrollAction"><h4><div class="--typeScrollBoundIn"><span><small>Question.2</small><p>職場の雰囲気は、どっち？</p></span></div></h4></div>
+				<ul class="homeAttractionBox__questionItemBox --typeScrollAction">
+					<li>
+						<p>俺の背中を見て学べ</p>
+						<figure><img src="img/home/imgQuestion0201.png" alt="俺の背中を見て学べ" /></figure>
+					</li>
+					<li>
+						<p>俺が手取り足取り教えよう</p>
+						<figure><img src="img/home/imgQuestion0202.png" alt="俺が手取り足取り教えよう" /></figure>
+					</li>
+				</ul>
+
+
+
+	                    <div class="accordionBox--typeHomeQuestion --typeScrollFadeIn">
+	                        <!--項目ここから-->
+	                        <div class="accordion--typeHomeQuestion">
+	                            <input type="checkbox" class="accordion--typeHomeQuestion__check" id="accordion--typeHomeQuestion__label002" />
+	                            <label for="accordion--typeHomeQuestion__label002">ANSWER</label>
+	                            <div class="accordion--typeHomeQuestion__content">
+	                                <!--隠す中身ここから-->
+						<div class="accordion--typeHomeQuestion__answerBox">
+							<p class="accordion--typeHomeQuestion__title">右が正解！</p>
+
+							<div class="accordion--typeHomeQuestion__headBox">
+								<p>初めての方にも安心して働いていただくため、教育マニュアルを元に基礎から丁寧に指導します。そしてスタッフ一人ひとりに向き合い、不安や困りごとを解消する環境も充実しています！</p>
+								<figure><img src="img/home/imgAnswer02.png" alt="俺が手取り足取り教えよう" /></figure>
+							<!--//.accordion--typeHomeQuestion__headBox--></div>
+							
+							<h3 class="accordion--typeHomeQuestion__title02">
+								<small>ふじやグループの魅力.2</small>
+								<b>「不安を自信に変える」教育制度</b>
+							</h3>
+							<div class="row">
+								<div class="col-6 col-md-4 sM">
+									<div class="box--type01 --typeThreeCol">
+										<div class="box--type01__content">
+											<figure><img src="img/home/imgAttraction0201.jpg" alt="" /></figure>
+											<h4 class="box--type01__lead">社長との面談</h4>
+											<p>入社3ヶ月は<br class="hidden-sp">毎月1回の面談</p>
+										<!-- /.box--type01__content --></div>
+									<!-- /.box--type01 --></div>
+								</div>
+								<div class="col-6 col-md-4 sM">
+									<div class="box--type01 --typeThreeCol">
+										<div class="box--type01__content">
+											<figure><img src="img/home/imgAttraction0202.jpg" alt="" /></figure>
+											<h4 class="box--type01__lead">店長との面談</h4>
+											<p>入社3ヶ月は<br class="hidden-sp">週1回の面談</p>
+										<!-- /.box--type01__content --></div>
+									<!-- /.box--type01 --></div>
+								</div>
+								<div class="col-6 col-md-4 sM">
+									<div class="box--type01 --typeThreeCol">
+										<div class="box--type01__content">
+											<figure><img src="img/home/imgAttraction0203.jpg" alt="" /></figure>
+											<h4 class="box--type01__lead">充実した勉強会</h4>
+											<p>仕事・人生に<br class="hidden-sp">必要な学びを得る</p>
+										<!-- /.box--type01__content --></div>
+									<!-- /.box--type01 --></div>
+								</div>
+								<div class="col-6 col-md-4 sM">
+									<div class="box--type01 --typeThreeCol">
+										<div class="box--type01__content">
+											<figure><img src="img/home/imgAttraction0204.jpg" alt="" /></figure>
+											<h4 class="box--type01__lead">全社員ミーティング</h4>
+											<p>毎月全社員が集まり<br class="hidden-sp">価値観共有を行う</p>
+										<!-- /.box--type01__content --></div>
+									<!-- /.box--type01 --></div>
+								</div>
+								<div class="col-6 col-md-4 sM">
+									<div class="box--type01 --typeThreeCol">
+										<div class="box--type01__content">
+											<figure><img src="img/home/imgAttraction0205.jpg" alt="" /></figure>
+											<h4 class="box--type01__lead">店舗社員ミーティング</h4>
+											<p>各店舗の社員が一丸となって<br class="hidden-sp">店舗力を高める</p>
+										<!-- /.box--type01__content --></div>
+									<!-- /.box--type01 --></div>
+								</div>
+								<div class="col-6 col-md-4 sM">
+									<div class="box--type01 --typeThreeCol">
+										<div class="box--type01__content">
+											<figure><img src="img/home/imgAttraction0206.jpg" alt="" /></figure>
+											<h4 class="box--type01__lead">他店舗視察</h4>
+											<p>他社の良いところを自社に持ち帰り、<br class="hidden-sp">店舗力向上を目指す</p>
+										<!-- /.box--type01__content --></div>
+									<!-- /.box--type01 --></div>
+								</div>
+								<div class="col-6 col-md-4 sM">
+									<div class="box--type01 --typeThreeCol">
+										<div class="box--type01__content">
+											<figure><img src="img/home/imgAttraction0207.jpg" alt="" /></figure>
+											<h4 class="box--type01__lead">経営指針書</h4>
+											<p>ふじやグループの全てが詰まった<br class="hidden-sp">虎の巻</p>
+										<!-- /.box--type01__content --></div>
+									<!-- /.box--type01 --></div>
+								</div>
+								<div class="col-6 col-md-4 sM">
+									<div class="box--type01 --typeThreeCol">
+										<div class="box--type01__content">
+											<figure><img src="img/home/imgAttraction0208.jpg" alt="" /></figure>
+											<h4 class="box--type01__lead">成長表（評価表）</h4>
+											<p>3ヶ月に1回評価表を使い<br class="hidden-sp">360度評価を行う</p>
+										<!-- /.box--type01__content --></div>
+									<!-- /.box--type01 --></div>
+								</div>
+								<div class="col-6 col-md-4 sM">
+									<div class="box--type01 --typeThreeCol">
+										<div class="box--type01__content">
+											<figure><img src="img/home/imgAttraction0209.jpg" alt="" /></figure>
+											<h4 class="box--type01__lead">食材ルート開発</h4>
+											<p>生産者さんとの<br class="hidden-sp">縁を広げる</p>
+										<!-- /.box--type01__content --></div>
+									<!-- /.box--type01 --></div>
+								</div>
+							<!-- /.row --></div>
+
+						<!--//.accordion--typeHomeQuestion__answerBox--></div>
+
+	                                <!--隠す中身ここまで-->
+	                            <!--//.accordion--typeHomeQuestion__content--></div>
+	                        <!--//.accordion--typeHomeQuestion--></div>
+	                        <!--//項目ここまで-->
+
+	                    <!--//.accordionBox--></div>
+
+
+
+				<div class="title--type02 --typeScrollAction"><h4><div class="--typeScrollBoundIn"><span><small>Question.3</small><p>社員の評価基準は、どっち？</p></span></div></h4></div>
+				<ul class="homeAttractionBox__questionItemBox --typeScrollAction">
+					<li>
+						<p>上司による感覚</p>
+						<figure><img src="img/home/imgQuestion0301.png" alt="上司による感覚" /></figure>
+					</li>
+					<li>
+						<p>社内規定により明確</p>
+						<figure><img src="img/home/imgQuestion0302.png" alt="社内規定により明確" /></figure>
+					</li>
+				</ul>
+
+
+
+	                    <div class="accordionBox--typeHomeQuestion --typeScrollFadeIn">
+	                        <!--項目ここから-->
+	                        <div class="accordion--typeHomeQuestion">
+	                            <input type="checkbox" class="accordion--typeHomeQuestion__check" id="accordion--typeHomeQuestion__label003" />
+	                            <label for="accordion--typeHomeQuestion__label003">ANSWER</label>
+	                            <div class="accordion--typeHomeQuestion__content">
+	                                <!--隠す中身ここから-->
+						<div class="accordion--typeHomeQuestion__answerBox">
+							<p class="accordion--typeHomeQuestion__title">右が正解！</p>
+
+							<div class="accordion--typeHomeQuestion__headBox">
+								<p>目標を達成しても、成果を出しても評価があいまいだと不安になりますよね。ふじやグループでは平等かつ不公平感を無くし、スタッフが納得して働けるようにシンプルでわかりやすい給与・評価制度を導入しています。適切な給与が受け取れるのはもちろん！評価基準が明確なのでモチベーション高く自身の目標に向けて進むことができます！</p>
+								<figure><img src="img/home/imgAnswer03.png" alt="社内規定により明確" /></figure>
+							<!--//.accordion--typeHomeQuestion__headBox--></div>
+							
+							<h3 class="accordion--typeHomeQuestion__title02">
+								<small>ふじやグループの魅力.3</small>
+								<b>明確に記された社内評価基準</b>
+							</h3>
+
+							<div class="homeAttractionBox__appraisalStandardBox">
+								<figure>
+									<img src="img/home/imgAttraction0301.jpg" alt="社内評価基準" />
+									<figcaption>明確な評価基準は社員全員で共有します</figcaption>
+								</figure>
+								<div class="homeAttractionBox__appraisalStandardBoxInner">
+									<p>評価基準は全社員に共有されており、評価する側も評価される側も納得性のある良い仕組みだと思っています。</p>
+									<dl>
+										<dt><b>水間 貴之</b><br>（鳥半阪神店）<br>2017年入社</dt>
+										<dd><img src="img/home/imgAttraction03person.jpg" alt="社員" /></dd>
+									</dl>
+								<!--//.homeAttractionBox__appraisalStandardBoxInner--></div>
+							<!--//.homeAttractionBox__appraisalStandardBox--></div>
+						<!--//.accordion--typeHomeQuestion__answerBox--></div>
+
+	                                <!--隠す中身ここまで-->
+	                            <!--//.accordion--typeHomeQuestion__content--></div>
+	                        <!--//.accordion--typeHomeQuestion--></div>
+	                        <!--//項目ここまで-->
+
+	                    <!--//.accordionBox--></div>
+
+
+
+
+
+				<div class="title--type02 --typeScrollAction"><h4><div class="--typeScrollBoundIn"><span><small>Question.4</small><p>働き方は、どっち？</p></span></div></h4></div>
+				<ul class="homeAttractionBox__questionItemBox --typeScrollAction">
+					<li>
+						<p>プライベート重視します！</p>
+						<figure><img src="img/home/imgQuestion0401.png" alt="プライベート重視します！" /></figure>
+					</li>
+					<li>
+						<p>バリバリ働いて稼ぎたいです!</p>
+						<figure><img src="img/home/imgQuestion0402.png" alt="バリバリ働いて稼ぎたいです!" /></figure>
+					</li>
+				</ul>
+
+
+	                    <div class="accordionBox--typeHomeQuestion --typeScrollFadeIn">
+	                        <!--項目ここから-->
+	                        <div class="accordion--typeHomeQuestion">
+	                            <input type="checkbox" class="accordion--typeHomeQuestion__check" id="accordion--typeHomeQuestion__label004" />
+	                            <label for="accordion--typeHomeQuestion__label004">ANSWER</label>
+	                            <div class="accordion--typeHomeQuestion__content">
+	                                <!--隠す中身ここから-->
+						<div class="accordion--typeHomeQuestion__answerBox">
+							<p class="accordion--typeHomeQuestion__title">両方OKです！</p>
+
+							<div class="accordion--typeHomeQuestion__headBox02">
+								<figure class="headBox02Image--type01"><img src="img/home/imgAnswer0401.png" alt="個人のスキルアップを全力で！" /></figure>
+								<p>プライペートを大切にしたい方、今はがっつり働いて経験を積みたい方。あなたにあった理想の働き方をしてください！</p>
+								<figure class="headBox02Image--type02"><img src="img/home/imgAnswer0402.png" alt="個人のスキルアップを全力で！" /></figure>
+							<!--//.accordion--typeHomeQuestion__headBox02--></div>
+							
+							<h3 class="accordion--typeHomeQuestion__title02">
+								<small>ふじやグループの魅力.4</small>
+								<b>どちらの働き方も選べます</b>
+							</h3>
+							<div class="row">
+								<div class="col-12 col-md-6 sM">
+									<div class="box--type01 --type05">
+										<h4 class="box--type01__title">ライフ重視型正社員</h4>
+										<div class="box--type01__content">
+											<figure><img src="img/home/imgAttraction0401.jpg" alt="" /></figure>
+											<h5 class="box--type01__lead">プライベートな時間を優先!</h5>
+											<p>完全週休2日制 / 1日8時間労働 /<br class="hidden-sp">各種技能手当支給 / 特別休暇（5連休）</p>
+										<!-- /.box--type01__content --></div>
+									<!-- /.box--type01 --></div>
+								</div>
+								<div class="col-12 col-md-6 sM">
+									<div class="box--type01 --type06">
+										<h4 class="box--type01__title">ワーク重視型正社員</h4>
+										<div class="box--type01__content">
+											<figure><img src="img/home/imgAttraction0402.jpg" alt="" /></figure>
+											<h5 class="box--type01__lead">ガッツリ稼ぎたい!</h5>
+											<p>年2回昇給 / 各種役職・技能手当 / 決算賞与 / <br class="hidden-sp">特別休暇（5連休）/ 月7回休日</p>
+										<!-- /.box--type01__content --></div>
+									<!-- /.box--type01 --></div>
+								</div>
+							<!-- /.row --></div>
+
+						<!--//.accordion--typeHomeQuestion__answerBox--></div>
+
+	                                <!--隠す中身ここまで-->
+	                            <!--//.accordion--typeHomeQuestion__content--></div>
+	                        <!--//.accordion--typeHomeQuestion--></div>
+	                        <!--//項目ここまで-->
+
+	                    <!--//.accordionBox--></div>
+
+
+
+
+
+				<div class="title--type02 --typeScrollAction"><h4><div class="--typeScrollBoundIn"><span><small>Question.5</small><p>ふじやグループの福利厚生、どれがホント？</p></span></div></h4></div>
+				
+				<div class="homeAttractionBox__welfareBox--PC clearfix --typeScrollFadeIn">
+					<div class="homeAttractionBox__welfareInner">
+						<div class="homeAttractionBox__welfare"><p><span>社会保険</span><small>健康保険、厚生年金保険、<br>
+雇用保険ほか全て完備<br>
+その他社労士相談あり</small></p></div>
+						<div class="homeAttractionBox__welfare"><p><span>目標達成旅行</span><small>年一回<br>全額会社負担</small></p></div>
+					<!-- /.homeAttractionBox__welfareInner --></div>
+					<div class="homeAttractionBox__welfareInner">
+						<div class="homeAttractionBox__welfare"><p><span>家族手当</span></p></div>
+						<div class="homeAttractionBox__welfare"><p><span>引越し補助</span></p></div>
+						<div class="homeAttractionBox__welfare"><p><span>出産祝い</span></p></div>
+						<div class="homeAttractionBox__welfare"><p><span>役職手当</span></p></div>
+						<div class="homeAttractionBox__welfare"><p><span>健康診断</span></p></div>
+						<div class="homeAttractionBox__welfare"><p><span>忌引き</span></p></div>
+						<div class="homeAttractionBox__welfare"><p><span>店舗懇親会</span></p></div>
+						<div class="homeAttractionBox__welfare"><p><span>社内<br>イベント</span></p></div>
+						<div class="homeAttractionBox__welfare"><p><span>他店舗研修</span></p></div>
+						<div class="homeAttractionBox__welfare"><p><span>退職金制度</span></p></div>
+						<div class="homeAttractionBox__welfare"><p><span>家族<br>ご招待</span></p></div>
+						<div class="homeAttractionBox__welfare"><p><span>スタッフ<br>割引</span></p></div>
+					<!-- /.homeAttractionBox__welfareInner --></div>
+					<div class="homeAttractionBox__welfareInner">
+						<div class="homeAttractionBox__welfare"><p><span>結婚祝い</span><small>会社からのお祝い金<br>ハネムーン休暇<br>ウェルカムボード作成</small></p></div>
+						<div class="homeAttractionBox__welfare"><p><span>家族ご招待会</span><small>お食事代<br>全額会社負担</small></p></div>
+					<!-- /.homeAttractionBox__welfareInner --></div>
+					<div class="homeAttractionBox__welfareInner">
+						<div class="homeAttractionBox__welfare"><p><span>資格補助</span></p></div>
+						<div class="homeAttractionBox__welfare"><p><span>勤続賞</span></p></div>
+						<div class="homeAttractionBox__welfare"><p><span>特殊技能<br>手当</span></p></div>
+						<div class="homeAttractionBox__welfare"><p><span>表彰制度</span></p></div>
+						<div class="homeAttractionBox__welfare"><p><span>記念日休暇</span></p></div>
+						<div class="homeAttractionBox__welfare"><p><span>子供の為の<br>職場見学会</span></p></div>
+					<!-- /.homeAttractionBox__welfareInner --></div>
+				<!-- /.homeAttractionBox__welfareBox--PC --></div>
+				
+				<div class="homeAttractionBox__welfareBox--SP clearfix">
+					<ul class="homeAttractionBox__welfareInner">
+						<li><span>社会保険</span></li>
+						<li><span>目標達成<br>旅行</span></li>
+						<li><span>結婚<br>祝い</span></li>
+						<li><span>家族<br>ご招待会</span></li>
+						<li><span>家族手当</span></li>
+						<li><span>引越し補助</span></li>
+						<li><span>出産祝い</span></li>
+						<li><span>役職手当</span></li>
+						<li><span>スタッフ<br>割引</span></li>
+						<li><span>特殊技能<br>手当</span></li>
+						<li><span>店舗<br>懇親会</span></li>
+						<li><span>社内<br>イベント</span></li>
+						<li><span>他店舗研修</span></li>
+						<li><span>退職金制度</span></li>
+						<li><span>健康診断</span></li>
+						<li><span>結婚祝い</span></li>
+						<li><span>資格補助</span></li>
+						<li><span>勤続賞</span></li>
+						<li><span>忌引き</span></li>
+						<li><span>表彰制度</span></li>
+						<li><span>記念日休暇</span></li>
+						<li><span>子供の為の<br>職場見学会</span></li>
+					<!-- /.homeAttractionBox__welfareInner --></ul>
+				<!-- /.homeAttractionBox__welfareBox--PC --></div>
+
+
+
+	                    <div class="accordionBox--typeHomeQuestion --typeScrollFadeIn">
+	                        <!--項目ここから-->
+	                        <div class="accordion--typeHomeQuestion">
+	                            <input type="checkbox" class="accordion--typeHomeQuestion__check" id="accordion--typeHomeQuestion__label005" />
+	                            <label for="accordion--typeHomeQuestion__label005">ANSWER</label>
+	                            <div class="accordion--typeHomeQuestion__content">
+	                                <!--隠す中身ここから-->
+						<div class="accordion--typeHomeQuestion__answerBox">
+							<p class="accordion--typeHomeQuestion__title">ウソは見つかりましたか?</p>
+							
+							<h3 class="accordion--typeHomeQuestion__title02">
+								<small>ふじやグループの魅力.5</small>
+							</h3>
+							
+							<p class="accordion--typeHomeQuestion__headBoxSentence">そうなんです!全てほんとの福利厚生です!スタッフが安心して働きやすい環境を実現するために充実させてます!飲食業界の中ではトップクラスの充実度かも!?</p>
+
+						<!--//.accordion--typeHomeQuestion__answerBox--></div>
+
+	                                <!--隠す中身ここまで-->
+	                            <!--//.accordion--typeHomeQuestion__content--></div>
+	                        <!--//.accordion--typeHomeQuestion--></div>
+	                        <!--//項目ここまで-->
+
+	                    <!--//.accordionBox--></div>
+
+			<!-- /.inBase --></div>
+		<!-- /.homeAttractionBox --></div>
+
+		<div class="homeThanksBox --typeScrollBoundIn"><span>
+			<h4>ここまで見てくださり、ありがとうございます!</h4>
+			<p>ふじやグループがどんな会社かわかっていただけましたでしょうか？</p>
+		</span><!-- /.homeThanksBox --></div>
+
+		<div id="homeMessageSection" class="inBase clearfix">
+			<div class="homeMessageBox --typeScrollFadeIn">
+				<h3 class="title--type01"><span>MESSAGE</span><small>社長のことば</small></h3>
+				<div class="homeMessageBox__lead"><p>少し真面目に<span>気持ちを伝えると</span></p></div>
+				<div class="homeMessageBox__content">
+					ふじやグループが90年以上経営できているのは来店されるお客様はもちろん日々、<br>
+					ふじやグループを支えてくれるスタッフのおかげです。<br><br>
+
+					
+					<div class="accordionBox--type01">
+		                        	<!--項目ここから-->
+		                        	<div class="accordion--type01 sM-s">
+		                            		<input type="checkbox" class="accordion--type01__check" id="accordion--type01__label002" />
+		                            		<label for="accordion--type01__label002">
+								<p>メッセージの続きを見る</p>
+								<div class="accordion--type01__icon"><div></div><div></div><!-- /.accordion--type01__icon --></div>
+		                            		</label>
+		                            		<div class="accordion--type01__content">
+				                                <!--隠す中身ここから-->
+				    				<p>
+									僕がスタッフにしてあげられることは、<br>
+									より成長しながら安心して働ける職場を作ることです。<br><br>
+
+									だから、より成長できる学びの場や取り組みを充実させ、<br>
+									安心して働ける制度や体制作りには力を入れています。<br>
+									むしろ力を入れすぎかもしれません（笑）。<br><br>
+
+									人生の3分の1は仕事をする中で自分の成長を実感したり、<br>
+									仲間と目標を成し遂げたり<br>
+									お客様が喜ぶことを考えてワクワクしたり<br>
+									その方が充実した毎日を過ごせると考えています。<br><br>
+
+									これまで面接した方達の多くが飲食業が大好きなのに、<br>
+									人間関係・評価・環境に不満を抱えて転職を<br>
+									考えられている状況を見てきました。<br><br>
+
+									今、あなたが今の職場で悩んでいることが<br>
+									ふじやグループで解決できるかもしれません。<br>
+									いや、むしろさせてください！<br><br>
+
+									職場見学や事前相談会も実施しております。<br>
+									是非気楽に面接に応募して下さい。
+								</p>
+				                                <!--隠す中身ここまで-->
+		                            		<!--//.accordion--type01__content--></div>
+		                        	<!--//.accordion--type01--></div>
+		                        	<!--//項目ここまで-->
+		                    	<!--//.accordionBox--></div>
+
+
+
+				<!-- /.homeMessageBox__content --></div>
+				<div class="homeMessageBox__image">
+					<figure><img src="img/home/imgMessage01.jpg" alt="ふじやグループ" /></figure>
+					<figure><img src="img/home/imgAvatar.png" alt="目標達成マン" /></figure>
+					<figure><img src="img/home/imgRepresentative.png" alt="ふじやグループ　社長" /></figure>
+				<!-- /.homeMessageBox__image --></div>
+			<!-- /.homeMessageBox --></div>
+
+		<!-- /.inBase --></div>
+
+
+        
+	<!-- /#contents --></div>
+
+	
+	<footer id="footer">
+		<div class="inBase clearfix">
+			<div class="footer__inner">
+				<div class="footer__applicationBox">
+					<p class="footer__applicationBox__title">面接を申し込む</p>
+					<div class="footer__applicationBox__inner">
+						<dl class="footer__applicationBox__button">
+							<dt>LINEから応募する</dt>
+							<dd><a href="#">公式LINEへ</a></dd>
+						<!-- /.footer__applicationBox__button --></dl>
+						<dl class="footer__applicationBox__button">
+							<dt>メールから応募する</dt>
+							<dd><a href="<?php echo home_url(); ?>/contact">メールフォームへ</a></dd>
+						<!-- /.footer__applicationBox__button --></dl>
+					<!-- /.footer__applicationBox__inner --></div>
+				<!-- /.footer__applicationBox --></div>
+				<!--<div class="footer__btnApplication"><a href="<?php echo home_url(); ?>/contact">見学会・面接を申し込む</a></div>-->
+				<p class="footer__lead">もっとふじやグループを知る!</p>
+				<ul class="footer__links01">
+					<li><a href="<?php echo home_url(); ?>/data">データを見る</a></li>
+					<li><a href="<?php echo home_url(); ?>/voice"><small>先輩社員に聞いてみた</small>スタッフの声</a></li>
+					<li><a href="<?php echo home_url(); ?>/question">よくあるご質問</a></li>
+					<li><a href="<?php echo home_url(); ?>/requirements">募集要項</a></li>
+					<li><a href="https://fujiyagroup.co.jp">ホームページはこちら</a></li>
+					<li><a href="<?php echo home_url(); ?>/company">会社概要</a></li>
+				</ul>
+				<div class="footFaceBookBnner">
+					<figure class="footFaceBookBnner__image"><img src="img/home/imgFacebookBanner.jpg" alt="ふじや丸の航海日誌" /></figure>
+					<div class="footFaceBookBnner__button"><a href="https://www.facebook.com/people/%E3%81%B5%E3%81%98%E3%82%84%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97%E3%81%AE%E6%8C%91%E6%88%A6/100063644525468/">公式Facebookはこちら</a></div>
+				<!-- /.footFaceBookBnner --></div>
+				<ul class="footer__links02">
+					<li><a href="<?php echo home_url(); ?>/requirements">募集要項</a></li>
+					<li><a href="<?php echo home_url(); ?>/company">会社概要</a></li>
+					<li><a href="https://fujiyagroup.co.jp">ホームページはこちら</a></li>
+				</ul>
+				<ul class="footer__navi">
+					<li><a href="<?php echo home_url(); ?>/">ふじやグループの魅力</a></li>
+					<li><a href="<?php echo home_url(); ?>/voice">先輩スタッフの声</a></li>
+					<li><a href="<?php echo home_url(); ?>/#homeMessageSection">代表挨拶</a></li>
+					<li><a href="<?php echo home_url(); ?>/recruit/data">データで見る</a></li>
+					<li><a href="<?php echo home_url(); ?>/recruit/question">よくあるご質問</a></li>
+					<li><a href="<?php echo home_url(); ?>/requirements">募集要項</a></li>
+					<li><a href="<?php echo home_url(); ?>/company">会社概要</a></li>
+					<li><a href="<?php echo home_url(); ?>/recruit/policy">プライバシーポリシー</a></li>
+				</ul>
+			<!-- /.footer__inner --></div>
+
+		<!-- /.inBase --></div>
+	<!-- /#footer --></footer>
+
+	<small class="copyright">Copyright &copy; 株式会社クワタ. All Rights Reserved.</small>
+        
+	<p id="btnRise"><a href="#wrapper"><i class="icon-arrow-up"></i><span>ページ上部に戻る</span></a></p>
+	  
+	<div id="btnTelEmpty"></div>
+    
+	    <div id="btnPageBottom">
+	        <div class="btnPageBottom--btn btnPageBottom--type01">
+	        	<div class="btnPageBottom--type01__inner">
+		            <a class="clearfix" href="tel:0798676344">
+		                <p class="btnPageBottom--type01__btnSent">TEL</p>
+		            </a>
+		            <a class="clearfix" href="#">
+		                <p class="btnPageBottom--type01__btnSent">LINE相談</p>
+		            </a>
+		            <a class="clearfix" href="<?php echo home_url(); ?>/contact">
+		                <p class="btnPageBottom--type01__btnSent">エントリー</p>
+		            </a>
+	        	<!-- /.btnPageBottom--type01__inner --></div>
+	        <!-- /.btnPageBottom--btn --></div>
+	    <!-- /#btnPageBottom --></div>
+<!-- /.--typeScrollFix --></div>
+<!-- /#wrapper --></div>
+
+</body>
+</html>
+
+<script data-main="js/main" src="js/require.js"></script>
